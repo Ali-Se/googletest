@@ -527,9 +527,9 @@ Google Test has the following macros to support death tests:
 
 | **Fatal assertion** | **Nonfatal assertion** | **Verifies** |
 |:--------------------|:-----------------------|:-------------|
-| `ASSERT_DEATH(`_statement, regex_`); | `EXPECT_DEATH(`_statement, regex_`); | _statement_ crashes with the given error |
-| `ASSERT_DEATH_IF_SUPPORTED(`_statement, regex_`); | `EXPECT_DEATH_IF_SUPPORTED(`_statement, regex_`); | if death tests are supported, verifies that _statement_ crashes with the given error; otherwise verifies nothing |
-| `ASSERT_EXIT(`_statement, predicate, regex_`); | `EXPECT_EXIT(`_statement, predicate, regex_`); |_statement_ exits with the given error and its exit code matches _predicate_ |
+| `ASSERT_DEATH(`_statement, regex_`);` | `EXPECT_DEATH(`_statement, regex_`); | _statement_ crashes with the given error |
+| `ASSERT_DEATH_IF_SUPPORTED(`_statement, regex_`);` | `EXPECT_DEATH_IF_SUPPORTED(`_statement, regex_`); | if death tests are supported, verifies that _statement_ crashes with the given error; otherwise verifies nothing |
+| `ASSERT_EXIT(`_statement, predicate, regex_`);` | `EXPECT_EXIT(`_statement, predicate, regex_`); |_statement_ exits with the given error and its exit code matches _predicate_ |
 
 where _statement_ is a statement that is expected to cause the process to
 die, _predicate_ is a function or function object that evaluates an integer
